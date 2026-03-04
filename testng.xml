@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="StarlaJewelsAPIFramework" verbose="1">
+
+    <listeners>
+        <listener class-name="org.Abhinandan_Basu_Project.utils.TestListeners"/>
+    </listeners>
+    <test name="Login API Validation">
+        <classes>
+            <class name="org.Abhinandan_Basu_Project.tests.LoginTests">
+                <methods>
+                    <include name="userPreconditionValidation"/>
+                    <include name="positiveLogin"/>
+                    <include name="negativeLogin"/>
+                    <include name="sqlInjectionTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Inventory API Validation">
+        <classes>
+            <class name="org.Abhinandan_Basu_Project.tests.InventoryTests">
+                <methods>
+                    <include name="positiveInventory"/>
+                    <include name="duplicateInventory"/>
+                    <include name="rollbackScenario"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
