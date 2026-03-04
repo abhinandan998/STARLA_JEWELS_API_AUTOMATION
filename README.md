@@ -551,7 +551,7 @@ clean test
 
 > 💡 Jenkins parameters prefixed with `-D` are passed as JVM system properties to Maven. However, **this framework reads from `config.properties`** — not system properties. To override config properties dynamically from Jenkins, use the approach below.
 
-#### Passing Jenkins Parameters into `config.properties` (Recommended)
+#### Passing Jenkins Parameters into `config.properties` 
 
 Add a **Pre-Build Shell/Batch step** that writes a `config.properties` override before Maven runs:
 
