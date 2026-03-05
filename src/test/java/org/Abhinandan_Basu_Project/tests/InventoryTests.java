@@ -2,8 +2,7 @@ package org.Abhinandan_Basu_Project.tests;
 
 import io.restassured.response.Response;
 
-import org.Abhinandan_Basu_Project.POJOS.InventoryRequest;
-import org.Abhinandan_Basu_Project.builder.InventoryRequestBuilder;
+
 import org.Abhinandan_Basu_Project.client.InventoryClient;
 
 import org.Abhinandan_Basu_Project.utils.DataGenerator;
